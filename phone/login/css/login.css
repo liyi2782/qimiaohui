@@ -1,0 +1,66 @@
+#Header {
+	color:rgba(255,255,255,1);
+	
+}
+.loginBg
+{
+    background-image:url('bg1.png');
+    background-size: 100% 100%;
+}
+#ScrollContent {
+	padding:2.69em 0em 0em 0em;
+}
+.uinn-at4{
+    padding: 2.69em 0.5em 0em !important;
+}
+.uinn-4a {
+    padding-top: 2.69em !important;
+}
+.uinn-a4{
+    padding:2.69em .5em 0 !important;
+}
+.b-gra3{
+	border-color:#d8d8d8;
+}
+.uinn-a6{
+	padding:1em 0.65em 0 0.65em;
+}
+.t-gra4{
+	color:#8c8c8c;
+}
+.uinn-a1{
+    padding:0.625em;
+}
+.uinn-a7{
+    padding:0 0.625em;
+}
+.c-wh
+{
+    background-color:#FFF;
+}
+.umar-at1{
+    margin-top:0.625em;
+}
+.uinn-at1{
+    padding-top:1em;
+}
+.uinn-4a{
+    padding-top:2.63em;
+}
+.e img{
+ max-height:720px; 
+ max-width:640px; 
+ width:expression(this.width > 640 && this.height < this.width ? 640: true); 
+ height:expression(this.height > 720 ? 720: true);
+ }
+.input-b{outline:none}
+.bc-fff{background:#FFFFFF }
+.bc-btn{background: #ff7e68;}
+.btn-c{padding: 0.5em 0;border-radius: inherit;}
+.btn-p{    border: 2px solid #ff7e68;
+    background: none;
+    color: #ff7e68;
+    }
+.yzm{    padding: 0.5em;
+    background: #ff7e68;
+    color: #fff;}

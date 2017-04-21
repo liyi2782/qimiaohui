@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="recommend/css/recommend.css">
+        <link rel="stylesheet" href="css/add.css">
+    </head>
+    <body class="um-vp" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="ub-img1 icon-left ulev2"></div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">追加</h1>
+                    <div class="nav-btn" id="nav-right"></div>
+                </div>
+            </div>
+            <div class="" data-control="CONTENT" id="ScrollContent">
+              <div class="scrollbox">
+                <div class="box_bounce ub ub-ver ub-pc">
+                  <div class="ub-f1">
+                  </div>
+                  <div class="bounce_status">下拉更新......</div>
+                  <div class="bounce_status">松手更新......</div>
+                  <div class="bounce_status">更新中......</div>
+                </div>
+                <div >
+                    <img src="css/icons/tt.png" alt="" style="width: 100%;height: 16em;"/>
+                </div>
+                <!-- 想要 -->
+                <div class='ub c-gra b-bla umh5'>
+                     <div class='ub-f1 want-con'>
+                         <div class="want">
+                            <div class="want-1"><img src="css/icons/yizan.png"/></div>
+                            <div class="want-1f"><strong>想要</strong></div>
+                        </div>
+                     </div>
+                     <div class='ub-f1 want-con'>
+                         <div class="want">
+                            <div class="want-1"><img src="css/icons/yizan.png"/></div>
+                            <div class="want-1f"><strong>拥有</strong></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="lis lis-add">
+                    <div class='ub-f1 ut-s'><strong>分类</strong></div>
+                    <div class="select bc-text uba-bot">
+                        <div class="text">所有</div>
+                        <div class="icon"></div>
+                        <select selectedindex="0" style="padding: 0.6em 1em">
+                            <option value=0>所有</option>
+                            <option value=1>选项二</option>
+                            <option value=2>选项三</option>
+                            <option value=3>选项四</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="lis lis-add">
+                    <div class='ub-f1 ut-s'><strong>美物名称</strong></div>
+                    <div class=" uinput ub ub-f1  uba-bot">
+                        <input type="text" style="border:0px;padding: 0.6em 1em;outline:none;width: 90%" value="名称" >
+                    </div>
+                </div>
+                <div class="lis lis-add">
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="btn" style="padding: 0.8em 0; background: #ff7e68">
+                    	追加美物
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+        <script src="js/appcan.listview.js"></script>
+        <script src="js/appcan.optionList.js"></script>
+        <script src="js/appcan.slider.js"></script>
+        <script src="js/appcan.tab.js"></script>
+        <script src="js/appcan.treeview.js"></script>
+        <script src="recommend/js/recommend.js"></script>
+        <script>
+            appcan.select(".select",function(ele,value){
+                console.log(value);
+            });
+               appcan.button(".btn", "ani-act", function() {
+                        
+            })
+            // $("#praise").click(function(){
+                // var praise_img = $("#praise-img");
+//             
+                // if(praise_img.attr("src") == ("css/icons/yizan.png")){
+                    // $(this).html("<img src='css/icons/zan.png' id='praise-img' class='animation' />");
+                // }else{
+                    // $(this).html("<img src='css/icons/yizan.png' id='praise-img' class='animation' />");
+//                 
+                // }
+            // });
+            // $("#praise1").click(function(){
+                // var praise_img = $("#praise-img1");
+//             
+                // if(praise_img.attr("src") == ("css/icons/yizan.png")){
+                    // $(this).html("<img src='css/icons/zan.png' id='praise-img1' class='animation' />");
+                // }else{
+                    // $(this).html("<img src='css/icons/yizan.png' id='praise-img1' class='animation' />");
+//                 
+                // }
+            // });
+    </script>
+    </body>
+</html>

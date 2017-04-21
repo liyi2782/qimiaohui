@@ -1,0 +1,64 @@
+
+        
+                    
+                        
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="other_my/css/other_my.css">
+        <!-- <link rel="stylesheet" href="css/fonts/ionic.app.min.css"> -->
+    </head>
+    <body class="um-vp " style="background:#fff;" ontouchstart>
+    <div id="page_0" class="up ub ub-ver bc-bg" tabindex="0">
+        <!--header开始-->
+        <div class="uh bc-head  ubb bc-border" data-control="header" id="header" style="color: #FFF">
+            <div class="ub">
+                <div class="nav-btn" id="nav-left">
+                    <div class="ub-img1 icon-left ulev2">
+                    </div>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">某某的主页</h1>
+                <div class="nav-btn" id="nav-right" onclick="detailed()">
+                    <div class="ub-img1 icon-more ulev2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header结束--><!--content开始-->
+        <div id="content" class="ub-f1 tx-l"  style="background: #F2F2F2">
+
+        </div>
+    </div>  
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+        <script src="js/appcan.listview.js"></script>
+        <script src="js/appcan.optionList.js"></script>
+        <script src="js/appcan.slider.js"></script>
+        <script src="js/appcan.tab.js"></script>
+        <script src="js/appcan.treeview.js"></script>
+        <script src="other_my/js/other_my.js"></script>
+        <script>
+            appcan.ready(function() {
+                var titHeight = $('#header').offset().height;
+                appcan.frame.open("content", "other_my_content.html", 0, titHeight);
+                window.onorientationchange = window.onresize = function() {
+                    appcan.frame.resize("content", 0, titHeight);
+                }
+            });
+            function detailed() {
+                appcan.window.open("detailed", "detailed.html",0);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+#Header {
+	height:2.63em;
+	
+	color:rgba(255,255,255,1);
+}
+#ScrollContent {
+	padding:2.69em 0em 2.69em 0em;
+}
+#Footer {
+	//background-color:rgba(209,209,209,1);
+}
+#Tab {
+    background-color:rgba(209,209,209,1);
+}
+.c-gra-fn3{
+    background-color:#d1d1d1;
+}
+.camera-bg{
+    background-image:url('myImg/camera-bg.png');
+}
+.uwh-pic{
+    width:3.75em;
+    height:3.375em;
+}
+.umar-t-pic{
+    margin-top:-3.5em;
+}
+input[type="radio"] + div>div.tp-edit{
+    background-image: url(myImg/edit.png);
+}
+.t-btn-u1{
+    background-image:url('myImg/t-btn-u1.png');
+}
+.uinn-u1{
+    padding-top:0.33em;
+}
+.uop{
+    background-color:transparent;
+}
+.c-wh
+{
+    background-color:#FFF;
+}
+.uwh-tBtn{
+    width:1.75em;
+    height:1.75em;
+}
+.uinn-4b {
+    padding-bottom: 2.69em;
+}
+.uinn-at4{
+    padding: 2.63em 0.5em 0em !important;
+}
+.uinn-4a {
+    padding-top: 2.63em !important;
+}
+.uinn-a4{
+    padding:2.63em .5em 0 !important;
+}
+.squIcon1{
+	background-image:url('myImg/icon_1.png');
+}
+.squIcon2{
+	background-image:url('myImg/icon_2.png');
+}
+
+.uinn-squ1{
+	padding:3.125em 1.0625em;
+}
+.uwh-squ1{
+	width:5em;
+	height:5em;
+}
+.uc-a-squ1{
+	-webkit-border-radius: 5em;
+	border-radius: 5em;
+}
+.c-gre1-squ{
+	background-color:#85bf22;
+}
+.c-red1-squ{
+	background-color:#dc1649;
+}
+.c-gra1-squ{
+	background-color:#acbcc4;
+}
+.c-blu1-squ{
+	background-color:#16a5d7;
+}
+.c-org1-squ{
+	background-color:#e6ae26;
+}
+.c-org2-squ{
+	background-color:#e56e05;
+}
+.ulev-squ{
+	font-size:0.9375em;
+}
+.t-gra7{
+	color:#6a6a6a;
+}
+.umar-at1{
+    margin-top:0.625em;
+}
+.uwh-squ1 {
+    width: 6em;
+    height: 6em;
+}

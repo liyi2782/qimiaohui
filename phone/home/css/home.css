@@ -1,0 +1,134 @@
+#header {
+	height:2.63em;
+	   
+	color:rgba(255,255,255,1);
+}
+
+#ScrollContent {
+	padding:2.69em 0em 2.69em 0em;
+}
+#footer {
+	//background-color:rgba(209,209,209,1);
+}
+#Tab {
+    background-color:rgba(209,209,209,1);
+}
+.c-gra-fn3{
+    background-color:#d1d1d1;
+}
+.camera-bg{
+    background-image:url('myImg/camera-bg.png');
+}
+.uwh-pic{
+    width:3.75em;
+    height:3.375em;
+}
+.umar-t-pic{
+    margin-top:-3.5em;
+}
+input[type="radio"] + div>div.tp-edit{
+    background-image: url(myImg/edit.png);
+}
+.t-btn-u1{
+    background-image:url('myImg/t-btn-u1.png');
+}
+.uinn-u1{
+    padding-top:0.33em;
+}
+.uop{
+    background-color:transparent;
+}
+.c-wh
+{
+    background-color:#FFF;
+}
+.uwh-tBtn{
+    width:1.75em;
+    height:1.75em;
+}
+.uinn-4b {
+    padding-bottom: 2.69em;
+}
+.uinn-at4{
+    padding: 2.63em 0.5em 0em !important;
+}
+.uinn-4a {
+    padding-top: 2.63em !important;
+}
+.uinn-a4{
+    padding:2.63em .5em 0 !important;
+}
+[data-control="CUSTOMLISTVIEW"].col3 li {
+    width: 33%;
+    margin-right: 0.3%;
+    float: left;
+    position: relative;
+}
+[data-control="SQUAREBOX"] > .bracket {
+    padding-top: 120%;
+}
+.wh100{
+  width:100%;  
+}
+.t-gra-4b
+{
+	color:#4b4b4b;
+}
+.umh-list8{
+	height:100%;
+	width:100%;
+}
+.ub-at-list
+{
+	-webkit-box-align:start;
+	box-align:start;
+}
+.col16{    
+    width: 48%;
+    margin: 1%}
+.wh100{
+    /*width: 100%;
+    height: 100%*/
+}
+.ub-con{position: relative;
+    /*width: 100%;
+    height: 100%;*/}
+.bc-wh{background: #FFFFFF;align-self: flex-start;}
+.ho-tab{
+    padding: 0.5em;
+}
+.sc-text{padding: 0.2em 0.5em}
+.pd-5{  
+}
+.pd-5 img{width: 1.2em; position: relative;
+    top: 0.7em;}
+.font-8{font-size: 80%}
+.po-f{position: relative;
+    left: 2em;
+    top: -1.5em;
+    font-size: 80%}
+.po-t{position: absolute;
+    left: 2em;font-size: 80%}
+.pd-4{  
+}
+.pd-tf{
+    padding-bottom: 0.8em;
+    padding-top: 0.5em;
+}
+.pd-t{padding-top: 0.5em}
+.mf-1{margin-left: 1em}
+.ba-f8{background: #f8f8f8}
+.pd-4 img{width: 1.5em; position: relative;
+    top: 0.7em;}
+.max-1{max-height: 2.2em}
+.tip0{position: relative;
+    left: 2em;
+    width: 80%;
+    padding: 0.3em;
+    top: -1.25em;    border-radius: 0.2em;    background: #f8f8f8;}
+.flex{    display: flex;
+    flex-wrap: wrap;}
+.umh2 {
+    min-height: 1.2em;
+    padding: 0.8em 0.5em
+}

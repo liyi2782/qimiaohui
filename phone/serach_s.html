@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="user/css/user.css">
+        <link rel="stylesheet" href="search/css/search.css">
+    </head>
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh bc-head  ubb bc-border" data-control="header" id="header">
+                
+                <div class="uinput ub  ub-f1 pd-tf" data-control="SEARCH" id="search">
+                    <div class="nav-btn" id="nav-left" style="min-width:2em">
+                        <div class="ub-img1 icon-left ulev2">
+                        </div>
+                    </div>
+                    <div class=" uinput ub ub-f1  bc-border uba" style="background: #FDFDFD">
+                        <div class="uinn fa fa-search sc-text"></div>
+                        <input placeholder="搜索" type="text" class="ub-f1 out-on">
+                    </div>
+                    <div class="button ub ub-ac bc-text-head ub-pc uc-a1 mg-1" onclick="">
+                                                                                取消
+                    </div>
+                    <div class="sc-bg" id="treeview">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lis ub ub-ver">
+               <div id="tabview" class="uf sc-bg offscroll"></div> <div class="sc-bg" id="treeview">
+</div>
+ 
+            </div>
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+        <script src="js/appcan.listview.js"></script>
+        <script src="js/appcan.optionList.js"></script>
+        <script src="js/appcan.slider.js"></script>
+        <script src="js/appcan.tab.js"></script>
+        <script src="js/appcan.treeview.js"></script>
+        <script src="search/js/search.js"></script>
+        <script>
+            function serach_s(){
+                appcan.window.open('serach_s','serach_s.html',0);
+            }
+            var tabview = appcan.tab({
+                selector : "#tabview",
+                hasIcon : false,
+                hasAnim : true,
+                hasLabel : true,
+                hasBadge : false,
+                data : [{
+                    label : "旅行",
+                    "icon":"fa-qq"
+                }, {
+                    label : "美物",
+                    "icon":"fa-windows"
+                }, {
+                    label : "古典乐器",
+                    "icon":"fa-windows"
+                }, {
+                    label : "眼镜",
+                    "icon":"fa-windows"
+                }, {
+                    label : "美物",
+                    "icon":"fa-windows"
+                }, {
+                    label : "专栏",
+                    "icon":"fa-weixin",
+                    badge:1
+                }]
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+.like1 {
+    background-image: url(icons/like.png);
+}
+.umw1 {
+    min-width: 1em;
+}
+.umh1 {
+    min-height: 1em;
+}
+
+.ub-img {
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.uinn-a7 {
+    padding: 0 0.625em;
+}
+.want-pic{
+    margin-top: 0.5em;
+    padding: 0.2em;
+}
+.set-add{padding: 1em 0 0.5em 1em;}
+.set-add1{padding: 0 0 0.5em 1em;}
+.lis-add{padding: 0.5em 1em}
+.uba-bot{border-bottom: 1px solid #D1D1D1}
+.want-con{text-align: center}
+.animation{width: 2em;}
+ .want{width: 80%;margin: 0 auto;padding: 0.5em 0;}
+ .want-1{width: 2em;height: 2em; margin: 0 auto}
+ .want-1 img{width: 100%;height: 100%;}
+ .want-1f{text-align: center;font-size: 90%;margin-top: 0.5em}
