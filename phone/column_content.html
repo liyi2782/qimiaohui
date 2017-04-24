@@ -15,73 +15,30 @@
     <body class="" ontouchstart>
       <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
        <div class="" data-control="CONTENT" id="">
-           
-        <div class="tab" data-control="CONTENT">
-            <div class="tab-or" onclick="lvxing()">
-                <span class="or">旅行</span>
+          <div class="scrollbox">
+            
+            <div class="tab">
+                <div class="tab-or" onclick="lvxing()">
+                    <span>旅行</span>
+                </div>
+                <div class="tab-or" onclick="meiwu()">
+                    <span>美物</span>
+                </div>
+                <div class="tab-or" onclick="zhuanlan()">
+                    <span class="or">专栏</span>
+                </div>
             </div>
-            <div class="tab-or" onclick="meiwu()">
-                <span>美物</span>
-            </div>
-            <div class="tab-or" onclick="zhuanlan()">
-                <span>专栏</span>
-            </div>
-        </div>
+            
+            <div class="box-1">
+                <div class="tab-t">
+                    <img src="home/css/myImg/tab3.png" alt="">
+                    <span class="tab-t-f">2016-5-12 星期日</span>
+                </div>
               <!-- 选框1 -->
-              <!-- 选框2 -->
-              <!-- <div class="col16 bc-wh">
-                  <div class="wh100">
-                      <ul class="ub-con">
-                          <li class="ub ub-ver ub-ac ub-con">
-                              <div class="wh100 ub-con">
-                                  <div class="bracket"></div>
-                                  <div class="uabs ub-con vector">
-                                      <img src="home/css/myImg/index_tab1_002.png" alt="" width="100%">
-                                  </div>
-                              </div>
-                          </li>
-                      </ul>
-                      <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
-                      <div class="bc-wh uinn sc-text font-8 pd-t">辽阔的草原</div>
-                      <div class="bc-wh uinn sc-text font-8">
-                          <div class="pd-4">
-                              <img src="home/css/myImg/want_3.png" alt="">
-                          </div>
-                          <div class="tip uba tip0 ">
-                              <img src="home/css/myImg/want_1.png" alt="" class="kk"/>
-                              <span class="" style="color: #FF7E67">想要</span>
-                              <span class="">1小时前</span>
-                          </div>
-                      </div>
-                      <div class="bc-wh uinn sc-text ba-f8">
-                         <div class='ub c-gra b-bla'>
-                            <div class="ub-f1 wantTip mf-1">
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_1.png" alt="">
-                                </span>
-                                <div class="tip">
-                                    <i class="po-f">37</i>
-                                    <span class="po-t">想要</span>
-                                </div>
-                            </div>
-                            <div class='ub-f1'>
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_2.png" alt="">
-                                </span>
-                                <div class="tip">
-                                    <i class="po-f">42</i>
-                                    <span class="po-t">拥有</span>
-                                </div>
-                            </div>
-                         </div>
-                      </div> 
-                  </div>
-              </div> -->
-              <!-- 选框3 -->
-             <div class="container">
+              <div class="container">
                 <div class="waterfall">
 
-                    <div class="pin" onclick="xiangxi()">
+                    <div class="pin">
                     <img src="home/css/myImg/index_tab1_002.png">
                     <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
                       <div class="bc-wh uinn sc-text font-8 pd-tf">辽阔的草原</div>
@@ -234,78 +191,37 @@
                 
                 </div>
               </div>
-                              <!-- 选框结束 -->
-                
+              <!-- 选框3 -->
+             
+              <!-- 选框结束 -->
+              </div>
+          </div>
        </div>
      </div>
 
            
         
-	    <script src="js/appcan.js"></script>
+        <script src="js/appcan.js"></script>
         <script src="js/appcan.control.js"></script>
         <script src="js/appcan.scrollbox.js"></script>
         <script src="js/template.import.js"></script>
-		<script src="js/appcan.listview.js"></script>
-		<script src="js/appcan.optionList.js"></script>
-		<script src="js/appcan.slider.js"></script>
-		<script src="js/appcan.tab.js"></script>
-		<script src="js/appcan.treeview.js"></script>
+        <script src="js/appcan.listview.js"></script>
+        <script src="js/appcan.optionList.js"></script>
+        <script src="js/appcan.slider.js"></script>
+        <script src="js/appcan.tab.js"></script>
+        <script src="js/appcan.treeview.js"></script>
         <script src="home/js/home.js"></script>
         <script>
-        // function lvxing() {
-            // appcan.window.open("lvxing", "home.html",0);
-        // }
+       
+         function lvxing() {
+            appcan.window.open("lvxing", "home.html",0);
+        }
          function meiwu() {
             appcan.window.open("meiwu", "meiwu.html",0);
         }
-         function zhuanlan() {
-            appcan.window.open("zhuanlan", "column.html",0);
-        }
-        function xiangxi() {
-            appcan.window.open("xiangxi", "user-g.html",2);
-        }
-// var tabview = appcan.tab({
-            // selector : "#tabview",
-            // hasIcon : false,
-            // hasAnim : true,
-            // hasLabel : true,
-            // hasBadge : false,
-            // data : [{
-        // label : "旅行",
-            // }, {
-        // label : "美物",
-            // }, {
-        // label : "专栏",
-            // }]
-        // });
-        // tabview.on("click",function(obj, index){ /*TAB变更时切换多浮动窗口*/
-            // appcan.window.selectMultiPopover("content",index);
-        // })
-        // appcan.ready(function() {
-            // var top = $('#header').offset().height + $('#tabview').offset().height;
-            // appcan.frame.open({/*创建多浮动窗口*/
-        // id : "content",
-        // url : [{
-            // "inPageName" : "home",
-            // "inUrl" : "home_content.html",
-        // }, {
-            // "inPageName" : "radio",
-            // "inUrl" : "home_mw_content.html",
-        // }, {
-            // "inPageName" : "checkbox",
-            // "inUrl" : "be_t.html",
-        // }],
-        // top : top,
-        // left : 0,
-        // index : 0,
-        // change:function(index,res){ /*浮动窗口推拽变更时回调，可控制tab进行同步变更*/
-            // tabview.moveTo(res. multiPopSelectedIndex);
+         // function zhuanlan() {
+            // appcan.window.open("zhuanlan", "column.html",0);
         // }
-            // });
-            // window.onorientationchange = window.onresize = function() {
-        // appcan.frame.resize("content", 0, top);
-            // }
-        // });
-    </script>
+    </script>    
     </body>
 </html>

@@ -10,53 +10,48 @@
         <link rel="stylesheet" href="css/ui-color.css">
         <link rel="stylesheet" href="css/appcan.icon.css">
         <link rel="stylesheet" href="css/appcan.control.css">
-        <link rel="stylesheet" href="user/css/user.css">
+        <link rel="stylesheet" href="meiwu/css/meiwu.css">
+        <link rel="stylesheet" href="home/css/home.css">
         <link rel="stylesheet" href="css/iconfont.css">
         <link rel="stylesheet" href="css/iconfont.eot">
-        <!-- <link rel="stylesheet" href="css/fonts/ionic.app.min.css"> -->
     </head>
-    <body class="um-vp " style="background:#fff;" ontouchstart>
+   <body class="um-vp " style="background:#fff;" ontouchstart>
     <div id="page_0" class="up ub ub-ver bc-bg" tabindex="0">
         <!--header开始-->
-        <div class="uh bc-head  ubb bc-border" data-control="header" id="header" style="color: #FFF">
+        <div class="uh bc-head  ubb bc-border" data-control="header" id="header">
             <div class="ub">
-                <div class="nav-btn" id="nav-right">
-                    <div class="fa  fa-  ub-img1"></div>
-                </div>
-                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">我的</h1>
-                <div class="nav-btn" id="nav-right" onclick="setting()">
-                    <div class="fa  fa-gear  ub-img1"></div>
-                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">首页</h1>
             </div>
         </div>
-        <!--header结束--><!--content开始-->
-        <div id="content" class="ub-f1 tx-l"  style="background: #F2F2F2">
-
+        
+        <div id="content" class="ub-f1 tx-l" style="display: block">
+           
         </div>
         <div class="uf sc-bg uinn-u1 uop" data-control="FOOTER" id="footer">
             <div class="uf" data-control="TAB" id="Tab" style="background: #fff;">
               <div class="uf t-bla ub tab_m">
                 <div class="ulev-1 ub ub-f1" data-index="0" id="home">
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
+                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab sc-text-active">
                     <div class="iconfont icon-logo" style="font-size: 2em"></div>
                     <div class="ulev tx-c font-b">首页</div>    
                   </div>        
                 </div>
                 <div class="ulev-1 ub ub-f1 font-b" data-index="1" id="search">
                   <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
-                    <div class="iconfont icon-search" style="font-size: 2em"></div>
+                   <div class="iconfont icon-search" style="font-size: 2em"></div>
                     <div class="ulev tx-c">搜索</div>
                   </div>        
                 </div>
+                <div class="sc-bg" id="treeview"></div>
                 <div class="ulev-1 ub ub-f1 font-b" data-index="2" id="release"> 
                   <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab"> 
-                    <div class="iconfont icon-tianjia" style="font-size: 2em"></div>
+                   <div class="iconfont icon-tianjia" style="font-size: 2em"></div>
                       <div class="ulev tx-c">发布</div>   
                   </div>   
                 </div>
                 <div class="ulev-1 ub ub-f1 font-b" data-index="3" id="my">
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab  sc-text-active">
-                   <div class="iconfont icon-yonghu" style="font-size: 2em"></div>
+                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
+                  <div class="iconfont icon-yonghu" style="font-size: 2em"></div>
                    <div class="ulev tx-c">我的</div>
                   </div>       
                 </div>
@@ -68,8 +63,8 @@
                 </div>
              </div>
            </div>
-        </div>
-    </div>  
+        </div>            
+    </div>
         <script src="js/appcan.js"></script>
         <script src="js/appcan.control.js"></script>
         <script src="js/appcan.scrollbox.js"></script>
@@ -79,11 +74,11 @@
         <script src="js/appcan.slider.js"></script>
         <script src="js/appcan.tab.js"></script>
         <script src="js/appcan.treeview.js"></script>
-        <script src="user/js/user.js"></script>
+        <script src="meiwu/js/meiwu.js"></script>
         <script>
-            appcan.ready(function() {
+             appcan.ready(function() {
                 var titHeight = $('#header').offset().height;
-                appcan.frame.open("content", "my_content.html", 0, titHeight);
+                appcan.frame.open("content", "column_content.html", 0, titHeight);
                 window.onorientationchange = window.onresize = function() {
                     appcan.frame.resize("content", 0, titHeight);
                 }
@@ -103,9 +98,7 @@
             appcan.button("#user", "btn-act", function() {
                uexWindow.open("user","0","user.html","0","0","0","0","200");
             })
-             function setting() {
-                appcan.window.open("set", "set.html",2);
-            }
+            
         </script>
     </body>
 </html>

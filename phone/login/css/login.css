@@ -4,7 +4,7 @@
 }
 .loginBg
 {
-    background-image:url('bg1.png');
+    background-image:url('logo_b.png');
     background-size: 100% 100%;
 }
 #ScrollContent {
@@ -47,11 +47,10 @@
 .uinn-4a{
     padding-top:2.63em;
 }
-.e img{
- max-height:720px; 
- max-width:640px; 
- width:expression(this.width > 640 && this.height < this.width ? 640: true); 
- height:expression(this.height > 720 ? 720: true);
+.logo{width: 50%; height: 8em; margin: 0 auto;margin-top: 2em}
+.logo img{
+ height:100%; 
+ width:100%;
  }
 .input-b{outline:none}
 .bc-fff{background:#FFFFFF }
@@ -63,4 +62,6 @@
     }
 .yzm{    padding: 0.5em;
     background: #ff7e68;
-    color: #fff;}
+    color: #fff;
+    margin-right: 0.3em}
+

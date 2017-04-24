@@ -31,11 +31,11 @@
 }
 /*辅助字体颜色*/
 .sc-text {
-    color: #848484;
+    color: #000000;
 }
 /*辅助字体颜色*/
 .sc-text-active {
-    color: #ff7e67 !important;
+    color: #ff7e67 !important;  
 }
 /*辅助字体颜色*/
 .sc-text-hint {
@@ -71,7 +71,7 @@
     background-color: #00A1EA;
 }
 
-
+.font-b{  font-weight:bolder;}
 
 
 

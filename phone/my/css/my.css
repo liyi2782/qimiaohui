@@ -103,6 +103,7 @@ input[type="radio"] + div>div.tp-edit{
 
 .uinn-a1{
     padding:0.625em;
+    padding-bottom: 0
 }
 .umar-at1{
     margin-top:0.625em;
@@ -176,7 +177,7 @@ height: 4em;}
     position: absolute;
     left: 63%;
     top: 0.2em;
-    padding: 0.05em 1em;
+    padding: 0.05em 1.5em;
     border: 2px solid #ff7e67;
     color:#ff7e67;
     border-radius: 0.2em;
@@ -223,4 +224,13 @@ height: 4em;}
     position: absolute;
     right: 0.5em;
     top: 0.1em;
+}
+
+.po-4{
+    position: absolute;
+    right: -1.2em;
+    top: 0.1em;
+}
+.f-lin{
+    margin-left: -1.2em;line-height: 2em;
 }

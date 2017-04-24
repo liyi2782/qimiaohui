@@ -20,7 +20,7 @@
                     <!-- <div class="nav-btn" id="nav-left">
                         <div class="ub-img1 icon-menu ulev2"></div>
                     </div> -->
-                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">登录</h1>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0" style="display: none">登录</h1>
                     <!-- <div class="nav-btn" id="nav-right">
                         <div class="ub-img1 icon-add ulev2"></div>
                     </div> -->
@@ -31,8 +31,10 @@
         <div class="ub ub-ver uinn-a4">
             
             <form method="get" action="http://www.appcan.cn">
-                <div class="e" style="display: flex">
-                  <img src="home/css/myImg/index_tab1_001.png" style="margin: 0 auto">
+                <div style="padding: 3em">
+                    <div class="logo">
+                        <img src="css/icons/logo.png">
+                    </div>
                 </div>
                 <div class="umar-a bc-border bc-fff">
                     <div class="ub ub-ac ubb umh5 bc-border ">
@@ -52,7 +54,7 @@
                 </div>
                 <div class="ub ub-ver uinn">
                     
-                    <div class="ub ub-pe uinn-a6 ulev-4" style="color: #616264">
+                    <div class="ub ub-pe uinn-a6 ulev-4" style="color: #616264" onclick="password()">
                                                                       忘记密码
                     </div>
                     <div class="uinn-at1">
@@ -87,7 +89,10 @@
         <script src="enter/js/enter.js"></script>
         <script>
             function go_login(){
-                appcan.window.open('go_login','login.html',0);
+                appcan.window.open('go_login','login.html',2);
+            }
+            function password(){
+                appcan.window.open('password','password.html',2);
             }
         </script>
     </body>
