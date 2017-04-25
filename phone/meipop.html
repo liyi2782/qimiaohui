@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="meipop/css/meipop.css">
+        <link rel="stylesheet" href="css/fonts1/iconfont.css">
+        <style type="text/css">
+            #page_0{width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);}
+            #content{width: 80%;background-color: #fff;margin:5% 5%;border-radius: 0.4em;padding: 0.8em;height:90%;overflow-y: auto }
+            #content1{width:95%;background-color: #fff;border-radius: 0.4em;padding: 0.8em;height:95%;overflow-y: auto }
+            .tit{text-align: center;font-size: 1.1em;}
+            .body{text-indent: 2em;font-size: 0.85em;padding: 1.5em 0 1.5em;}
+            .cancel{margin-left:0.5em; padding: 0.9em 0.1em}
+            .cancel i{margin-right: 0.5em}
+        </style>
+    </head>
+    <body class="um-vp" style="" ontouchstart>
+        <div id="page_0" class="up ub ub-ver bc-bg" tabindex="0">
+            <div id="content">
+                <div id="content1">
+                <div class="cancel"><strong>分类</strong></div>
+                <div class="cancel"><i class="iconfont icon-diqiu"></i>全部</div>
+                <div class="cancel"><i class="iconfont icon-lianyiqun"></i>时尚</div>
+                <div class="cancel"><i class="iconfont icon-35"></i>珠宝</div>
+                <div class="cancel"><i class="iconfont icon-yanjing-copy"></i>眼镜</div>
+                <div class="cancel"><i class="iconfont icon-law"></i>古典建筑</div>
+                <div class="cancel"><i class="iconfont icon-leqi"></i>乐器</div>
+                <div class="cancel"><i class="iconfont icon-mianbao"></i>美食</div>
+                <div class="cancel"><i class="iconfont icon-chongwu"></i>宠物</div>
+                <div class="cancel"><i class="iconfont icon-jiaju"></i>家具</div>
+                <div class="cancel"><i class="iconfont icon-qiche"></i>汽车</div>
+                <div class="cancel"><i class="iconfont icon-jiaju"></i>家具</div>
+                <div class="cancel"><i class="iconfont icon-qiche"></i>汽车</div>
+            </div> </div>
+        </div>
+    <script src="js/appcan.js"></script>
+    <script src="js/appcan.control.js"></script>
+    </body>
+    <script>
+        // appcan.ready(function() {
+        // });
+        appcan.button(".cancel","btn-act",function(){
+            appcan.frame.close('meipop'); 
+        })
+        
+    </script>
+</html>

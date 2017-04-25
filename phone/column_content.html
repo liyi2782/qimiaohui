@@ -11,62 +11,57 @@
         <link rel="stylesheet" href="css/appcan.icon.css">
         <link rel="stylesheet" href="css/appcan.control.css">
         <link rel="stylesheet" href="home/css/home.css">
-    </head>
+        <script src="js/masonry.pkgd.min.js"></script>
     <body class="" ontouchstart>
       <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
        <div class="" data-control="CONTENT" id="">
+          <div class="tab tab33">
+              <div class="tab-or" onclick="lvxing()">
+                  <span>旅行</span>
+              </div>
+              <div class="tab-or" onclick="meiwu()">
+                  <span>美物</span>
+              </div>
+              <div class="tab-or" onclick="zhuanlan()">
+                  <span class="or">专栏</span>
+              </div>
+          </div>
           <div class="scrollbox">
-            
-            <div class="tab">
-                <div class="tab-or" onclick="lvxing()">
-                    <span>旅行</span>
-                </div>
-                <div class="tab-or" onclick="meiwu()">
-                    <span>美物</span>
-                </div>
-                <div class="tab-or" onclick="zhuanlan()">
-                    <span class="or">专栏</span>
-                </div>
-            </div>
-            
-            <div class="box-1">
-                <div class="tab-t">
-                    <img src="home/css/myImg/tab3.png" alt="">
-                    <span class="tab-t-f">2016-5-12 星期日</span>
-                </div>
+              <div class="tab-t">
+                  <img src="home/css/myImg/tab3.png" alt="">
+                  <span class="tab-t-f">2016-5-12 星期日</span>
+              </div>
               <!-- 选框1 -->
-              <div class="container">
-                <div class="waterfall">
-
-                    <div class="pin">
-                    <img src="home/css/myImg/index_tab1_002.png">
-                    <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
-                      <div class="bc-wh uinn sc-text font-8 pd-tf">辽阔的草原</div>
+              <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100% }'>
+                  <div class="grid-item">
+                      <img src="home/css/myImg/index_tab1_002.png">
+                      <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
+                      <div class="bc-wh uinn sc-text font-8">辽阔的草原</div>
                       <div class="bc-wh uinn sc-text font-8">
                           <div class="pd-4">
                               <img src="home/css/myImg/want_3.png" id="wantimg1">
                           </div>
                           <div class="tip uba tip0 ">
-                              <img src="home/css/myImg/want_1.png" id="wantimg" class="kk"/>
-                              <span class="" style="color: #FF7E67">想要</span>
-                              <span class="">1小时前</span>
+                              <div class="x1"><img src="home/css/myImg/want_1.png"/></div>
+                              <span class="z1">想要</span>
+                              <span class="z2">1小时前</span>
                           </div>
                       </div>
                       <div class="bc-wh uinn sc-text ba-f8">
                          <div class='ub c-gra b-bla'>
                             <div class="ub-f1 wantTip mf-1">
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_1.png" id="wantimg">
-                                </span>
+                                <div class="pd-5">
+                                    <img src="home/css/myImg/want_1.png" />
+                                </div>
                                 <div class="tip">
                                     <i class="po-f"><strong>37</strong></i>
                                     <span class="po-t">想要</span>
                                 </div>
                             </div>
                             <div class='ub-f1'>
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_2.png" id="wantimg">
-                                </span>
+                                <div class="pd-5">
+                                    <img src="home/css/myImg/want_2.png" />
+                                </div>
                                 <div class="tip">
                                     <i class="po-f">42</i>
                                     <span class="po-t">拥有</span>
@@ -74,127 +69,74 @@
                             </div>
                          </div>
                       </div> 
-                    </div>
-                
-                
-                    <div class="pin">
-                    <img src="home/css/myImg/index_tab1_002.png">
-                    <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
-                      <div class="bc-wh uinn sc-text font-8 pd-tf">辽阔的草原</div>
+                  </div>
+                  <div class="grid-item">
+                      <img src="home/css/myImg/index_tab1_001.png">
+                      <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
+                      <div class="bc-wh uinn sc-text font-8">辽阔的草原</div>
+                      <div class="bc-wh uinn sc-text font-8">
+                          <div class="pd-4">
+                              <img src="home/css/myImg/want_3.png" id="wantimg1">
+                          </div>
+                          <div class="tip uba tip0 ">
+                              <div class="x1"><img src="home/css/myImg/want_1.png"/></div>
+                              <span class="z1">想要</span>
+                              <span class="z2">1小时前</span>
+                          </div>
+                      </div>
                       <div class="bc-wh uinn sc-text ba-f8">
                          <div class='ub c-gra b-bla'>
                             <div class="ub-f1 wantTip mf-1">
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_1.png" id="wantimg">
-                                </span>
+                                <div class="pd-5">
+                                    <img src="home/css/myImg/want_1.png" />
+                                </div>
                                 <div class="tip">
                                     <i class="po-f"><strong>37</strong></i>
                                     <span class="po-t">想要</span>
                                 </div>
                             </div>
                             <div class='ub-f1'>
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_2.png" id="wantimg">
-                                </span>
+                                <div class="pd-5">
+                                    <img src="home/css/myImg/want_2.png" />
+                                </div>
                                 <div class="tip">
                                     <i class="po-f">42</i>
                                     <span class="po-t">拥有</span>
                                 </div>
                             </div>
                          </div>
-                      </div>
-                    </div>
-                
-                    <div class="pin">
-                    <img src="home/css/myImg/index_tab1_001.png">
-                    <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
-                      <div class="bc-wh uinn sc-text font-8 pd-tf">辽阔的草原</div>
+                      </div>  
+                  </div>
+                  <div class="grid-item">
+                      <img src="home/css/myImg/index_tab1_001.png">
+                      <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
+                      <div class="bc-wh uinn sc-text font-8">辽阔的草原</div>
+                      
                       <div class="bc-wh uinn sc-text ba-f8">
                          <div class='ub c-gra b-bla'>
                             <div class="ub-f1 wantTip mf-1">
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_1.png" id="wantimg">
-                                </span>
+                                <div class="pd-5">
+                                    <img src="home/css/myImg/want_1.png" />
+                                </div>
                                 <div class="tip">
                                     <i class="po-f"><strong>37</strong></i>
                                     <span class="po-t">想要</span>
                                 </div>
                             </div>
                             <div class='ub-f1'>
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_2.png" id="wantimg">
-                                </span>
+                                <div class="pd-5">
+                                    <img src="home/css/myImg/want_2.png" />
+                                </div>
                                 <div class="tip">
                                     <i class="po-f">42</i>
                                     <span class="po-t">拥有</span>
                                 </div>
                             </div>
                          </div>
-                      </div>
-                    </div>
-                
-                    <div class="pin">
-                    <img src="home/css/myImg/index_tab1_002.png">
-                    <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
-                      <div class="bc-wh uinn sc-text font-8 pd-tf">辽阔的草原</div>
-                      <div class="bc-wh uinn sc-text ba-f8">
-                         <div class='ub c-gra b-bla'>
-                            <div class="ub-f1 wantTip mf-1">
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_1.png" id="wantimg">
-                                </span>
-                                <div class="tip">
-                                    <i class="po-f"><strong>37</strong></i>
-                                    <span class="po-t">想要</span>
-                                </div>
-                            </div>
-                            <div class='ub-f1'>
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_2.png" id="wantimg">
-                                </span>
-                                <div class="tip">
-                                    <i class="po-f">42</i>
-                                    <span class="po-t">拥有</span>
-                                </div>
-                            </div>
-                         </div>
-                      </div>
-                    </div>
-                
-                    <div class="pin">
-                    <img src="home/css/myImg/index_tab1_001.png">
-                    <div class="bc-wh uinn sc-text"><strong class="bl">Copacabana</strong></div>
-                      <div class="bc-wh uinn sc-text font-8 pd-tf">辽阔的草原</div>
-                      <div class="bc-wh uinn sc-text ba-f8">
-                         <div class='ub c-gra b-bla'>
-                            <div class="ub-f1 wantTip mf-1">
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_1.png" id="wantimg">
-                                </span>
-                                <div class="tip">
-                                    <i class="po-f"><strong>37</strong></i>
-                                    <span class="po-t">想要</span>
-                                </div>
-                            </div>
-                            <div class='ub-f1'>
-                                <span class="pd-5">
-                                    <img src="home/css/myImg/want_2.png" id="wantimg">
-                                </span>
-                                <div class="tip">
-                                    <i class="po-f">42</i>
-                                    <span class="po-t">拥有</span>
-                                </div>
-                            </div>
-                         </div>
-                      </div>
-                    </div>
-                
+                      </div>   
+                  </div>
                 </div>
-              </div>
-              <!-- 选框3 -->
-             
               <!-- 选框结束 -->
-              </div>
           </div>
        </div>
      </div>
@@ -212,7 +154,9 @@
         <script src="js/appcan.treeview.js"></script>
         <script src="home/js/home.js"></script>
         <script>
-       
+       var msnry = new Masonry( '.grid', {
+          // options
+        });
          function lvxing() {
             appcan.window.open("lvxing", "home.html",0);
         }
