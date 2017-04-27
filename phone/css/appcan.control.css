@@ -209,7 +209,7 @@
 
 .tab_i .focus, .tab_l .focus,.slider .focus {
     position: absolute;
-    height: 2px;
+    height:0.1em;
     bottom: 0px;
 }
 
