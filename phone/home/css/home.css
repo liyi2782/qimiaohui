@@ -169,7 +169,7 @@ input[type="radio"] + div>div.tp-edit{
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;}*/
-.pd-4{width: 1.5em;}
+.pd-4{width: 1.7em;}
 .container {
 /*width: 50%;*/margin: 0 auto;
 }
@@ -313,3 +313,19 @@ margin: 0 auto;}
 .grid-item img{width: 100%; height:100%;}
 .grid-item--width2 { width: 50%; }
 .tab33{.header{ position:fixed; left:0; top:0; width:100%; height:100px; z-index:9999; background-color:#000;}}
+.yue{width:94%;margin: 0 auto; border-radius: 0.2em;}
+.yuedu{
+    text-align: center;  
+    width: 100%; 
+    line-height: 1.7em;
+    color: #FB7A3B;
+    border: 1px solid; 
+    /*border-radius: 0.2em;*/
+}
+.bt{    width: 90%;
+    height: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+}
