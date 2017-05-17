@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <meta charset="utf-8">
+        <script src="js/jquery-1.8.3.js"></script>
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
         <link rel="stylesheet" href="css/ui-box.css">
@@ -12,83 +13,63 @@
         <link rel="stylesheet" href="css/appcan.control.css">
         <link rel="stylesheet" href="login/css/login.css">
         <link rel="stylesheet" href="css/iconfont.css">
+        
     </head>
     <body class="" ontouchstart>
         <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
-            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
-                <div class="ub">
-                    <div class="nav-btn" id="nav-left">
-                        <div class="ub-img1 icon-left ulev2">
-                        </div>
-                    </div>
-                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">注册</h1>
-                    <div class="nav-btn" id="nav-right">
-                        <div class="fa  fa-1g  ub-img1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="" data-control="CONTENT" id="ScrollContent">
-                <div class="scrollbox">
-                    <div class="box_bounce ub ub-ver ub-pc">
-                        <div class="ub-f1">
-                        </div>
-                        <div class="bounce_status">下拉更新......</div>
-                        <div class="bounce_status">松手更新......</div>
-                        <div class="bounce_status">更新中......</div>
-                    </div>
-                </div>
-            </div>
-            <div class="ub ub-ver ub-ac ub-con loginBg" data-control="FLEXBOXVER" id="ContentFlexVer">
-                <form method="get" action="http://www.appcan.cn">
-                    <div style="padding:1em 3em">
-                        <div class="logo">
-                            <img src="css/icons/logo.png">
-                        </div>
-                    </div>
-                    
-                    <div class="umar-a bc-border bc-fff">
-                        <div class="ub ub-ac ubb umh5 bc-border ">
-                            <div class=" uinput ub ub-f1">
-                                <div class="iconfont icon-person" style="font-size: 1.5em;padding:0 0.5em; color: #343434"></div>
-                                <input placeholder="手机号" type="text" class="ub-f1 input-b">
-                            </div>
-                        </div>
-                        <div class="ub ub-ac ubb umh5 bc-border ">
-                            <div class=" uinput ub ub-f1">
-                                <div class="iconfont icon-mobilephoneverification" style="font-size: 1.5em;padding:0 0.5em; color: #343434"></div>
-                                <input placeholder="请输入验证码" type="text" class="ub-f1 input-b">
-                                <div class="yzm" onclick="">获取验证码</div>
-                            </div>
-                        </div>
-                        <div class="ub ub-ac ubb umh5 bc-border ">
-                            <div class=" uinput ub ub-f1">
-                                <div class="iconfont icon-password" style="font-size: 1.5em;padding:0 0.5em; color: #343434"></div>
-                                <input placeholder="密码" type="password" class="umw4 ub-f1 input-b">
-    
-                            </div>
-                        </div>
-                        <div class="ub ub-ac umh5 bc-border ">
-                            <div class=" uinput ub ub-f1">
-                                <div class="iconfont icon-refresh" style="font-size: 1.5em;padding:0 0.5em; color: #343434"></div>
-                                <input placeholder="重输密码" type="password" class="umw4 ub-f1 input-b">
-    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ub ub-ver uinn">
+            <div class="bc-bg ub ub-ver ub-ac ub-con" data-control="FLEXBOXVER" id="ContentFlexVer">
+                <div class="ub ub-ver uinn-a3 ub-fv loginBg ub-img1 ub-fh">
+                    <div class="ub ub-ver uinn-a4">
                         
-                        <div class="uinn-at1" onclick="go_login()">
-                            <div class="button ub ub-ac bc-text-head ub-pc bc-btn uc-a1 btn-c" id="">
-                                                                                    注册
+                        <form method="get" action="http://www.appcan.cn">
+                            <div style="padding: 1.5em">
+                                <div class="logo">
+                                    <img src="css/icons/logo.png">
+                                </div>
                             </div>
+                            <div class="umar-a bc-border bc-fff">
+                                <div class="ub ub-ac ubb umh5 bc-border ">
+                                    <div class=" uinput ub ub-f1">
+                                        <div class="iconfont icon-person" style="font-size: 1.5em;padding:0 0.5em; color: #343434"></div>
+                                        <input id="phone" placeholder="手机号" type="text" class="ub-f1 input-b" id="uid">
+                                    </div>
+                                </div>
+                                
+                                <div class="ub ub-ac umh5 bc-border ">
+                                    <div class=" uinput ub ub-f1">
+                                        <div class="iconfont icon-password" style="font-size: 1.5em;padding:0 0.5em; color: #343434"></div>
+                                        <input id="pass" placeholder="密码" type="password" class="umw4 ub-f1 input-b" id="pwd">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ub ub-ver uinn">
+                                <div class="button ub ub-ac bc-text-head ub-pc bc-btn uc-a1 btn-c" onclick="login()">
+                                                                                        登录
+                                </div><div id="result"></div>
+                                <div class="ub ub-pe uinn-a6 ulev-4 wjmm" onclick="password()">
+                                                                              忘记密码
+                                </div>
+                            </div>
+                        </form>
+                        <div class="ub ub-ver uinn">
+                            <div class="order">  
+                               <span class="line"></span>  
+                               <span class="txt">社交账号直接登录</span>  
+                               <span class="line"></span>  
+                            </div>  
+                            <div class="uinn-at1">
+                                <div class="button ub ub-ac bc-text-head ub-pc bc-btn uc-a1 btn-c  lv" id="">
+                                                                                       微信登录
+                                </div>
+                            </div> 
                         </div>
                     </div>
-                    <button type="submit"class="uinvisible"></button>
-                    
-                </form>
-        <div class="uinn-4b"></div>
-        </div>
+                    <div class="login-enter">
+                        <span class="bottom-font-l" onclick="go_register()">新用户注册</span>
+                        <span class="bottom-font-r" onclick="look()">随便看看</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="js/appcan.js"></script>
         <script src="js/appcan.control.js"></script>
@@ -100,5 +81,16 @@
 		<script src="js/appcan.tab.js"></script>
 		<script src="js/appcan.treeview.js"></script>
         <script src="login/js/login.js"></script>
+        <script>
+        function go_register(){
+            appcan.window.open('go_register','register.html',1);
+        }
+        function password(){
+            appcan.window.open('password','password.html',2);
+        }
+        function look(){
+            appcan.window.open('look','home.html',2);
+        }
+        </script>
     </body>
 </html>

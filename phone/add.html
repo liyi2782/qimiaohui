@@ -3,6 +3,8 @@
     <head>
         <title></title>
         <meta charset="utf-8">
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/token.js"></script>
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
         <link rel="stylesheet" href="css/ui-box.css">
@@ -33,14 +35,17 @@
                   <div class="bounce_status">松手更新......</div>
                   <div class="bounce_status">更新中......</div>
                 </div>
-                <div >
-                    <img src="css/icons/tt.png" alt="" style="width: 100%;height: 16em;"/>
+                <div class="add_img ub">
+                    <!--图片预览容器-->
+                    <div id="div_imglook"></div>
                 </div>
+                <!--图片选择器框-->
+                <div id="div_imgfile">选择图片</div>
                 <!-- 想要 -->
                 <div class='ub c-gra b-bla umh5'>
                      <div class='ub-f1 want-con'>
                          <div class="want">
-                            <div class="want-1"><img src="css/icons/yizan.png"/></div>
+                            <div class="want-1"><img id="show" onclick="changeImages()" src="images/xh00.png"/></div>
                             <div class="want-1f"><strong>想要</strong></div>
                         </div>
                      </div>
@@ -55,25 +60,21 @@
                     <div class='ub-f1 ut-s'><strong>分类</strong></div>
                     <div class="select bc-text uba-bot">
                         <div class="text">所有</div>
-                        <div class="icon"></div>
-                        <select selectedindex="0" style="padding: 0.6em 1em">
-                            <option value=0>所有</option>
-                            <option value=1>选项二</option>
-                            <option value=2>选项三</option>
-                            <option value=3>选项四</option>
-                        </select>
+                        <select selectedindex="0" style="" id="load_type" class="ddd" onChange="onChangeSelect();"></select>
                     </div>
                 </div>
                 <div class="lis lis-add">
                     <div class='ub-f1 ut-s'><strong>美物名称</strong></div>
                     <div class=" uinput ub ub-f1  uba-bot">
-                        <input type="text" style="border:0px;padding: 0.6em 1em;outline:none;width: 90%" value="名称" >
+                        <input type="text" id="mwname" value="名称" >
                     </div>
                 </div>
                 <div class="lis lis-add">
-                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="btn" style="padding: 0.8em 0; background: #ff7e68">
-                    	追加美物
-                    </div>
+                    <div class='ub-f1 ut-s'><strong>美物描述</strong></div>
+                    <textarea name="name" id="mw_des" cols ="50" rows = "3" class="text_ku"></textarea>
+                </div>
+                <div class="lis lis-add">
+                    <input type="button" value="确定上传" id="btn_ImgUpStart" class="add_btn"/>
                 </div>
               </div>
             </div>
@@ -87,34 +88,20 @@
         <script src="js/appcan.slider.js"></script>
         <script src="js/appcan.tab.js"></script>
         <script src="js/appcan.treeview.js"></script>
-        <script src="recommend/js/recommend.js"></script>
+        <script src="js/add.js"></script>
+        
         <script>
-            appcan.select(".select",function(ele,value){
-                console.log(value);
-            });
-               appcan.button(".btn", "ani-act", function() {
-                        
-            })
-            // $("#praise").click(function(){
-                // var praise_img = $("#praise-img");
-//             
-                // if(praise_img.attr("src") == ("css/icons/yizan.png")){
-                    // $(this).html("<img src='css/icons/zan.png' id='praise-img' class='animation' />");
-                // }else{
-                    // $(this).html("<img src='css/icons/yizan.png' id='praise-img' class='animation' />");
-//                 
-                // }
-            // });
-            // $("#praise1").click(function(){
-                // var praise_img = $("#praise-img1");
-//             
-                // if(praise_img.attr("src") == ("css/icons/yizan.png")){
-                    // $(this).html("<img src='css/icons/zan.png' id='praise-img1' class='animation' />");
-                // }else{
-                    // $(this).html("<img src='css/icons/yizan.png' id='praise-img1' class='animation' />");
-//                 
-                // }
-            // });
+            var b=0;//定义全局变量，否则每次点击都会从新计数  
+            function changeImages(){ //更换图片方法 
+                a=document.getElementById('show');//获取目标Id  
+                if(b<2){//图片张数，遍历每张图  
+                    a.src="images/xh0"+b+".png";//替换位置  
+                    b++;  
+                }else{  
+                    b=0;  
+                }  
+            }
+            
     </script>
     </body>
 </html>

@@ -12,21 +12,20 @@
         <link rel="stylesheet" href="css/appcan.control.css">
         <link rel="stylesheet" href="release/css/release.css">
         <link rel="stylesheet" href="css/iconfont.css">
-        <link rel="stylesheet" href="css/iconfont.eot">
     </head>
     <body class="" ontouchstart>
         <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
             <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
                 <div class="ub">
-                    <!-- <div class="nav-btn" id="nav-left">
+                    <div class="nav-btn" id="nav-left">
                         <div class="ub-img1 icon-left ulev2">
                         </div>
-                    </div> -->
+                    </div>
                     <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">添加内容至奇妙滙</h1>
-                    <!-- <div class="nav-btn" id="nav-right">
-                        <div class="ub-img1 icon-adduser ulev2">
+                    <div class="nav-btn" id="nav-right">
+                        <div class="ub-img1  ">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="bc-bg ub ub-ver ub-ac ub-con" data-control="FLEXBOXVER" id="ContentFlexVer">
@@ -72,41 +71,10 @@
             <div class="uinn-4b"></div>
         </div>
         </div>
-            <div class="uf sc-bg uinn-u1 uop" data-control="FOOTER" id="footer">
-            <div class="uf" data-control="TAB" id="Tab" style="background: #fff;">
-              <div class="uf t-bla ub tab_m">
-                <div class="ulev-1 ub ub-f1" data-index="0" id="home">
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
-                    <div class="iconfont icon-logo" style="font-size: 2em"></div>
-                    <div class="ulev tx-c font-b">首页</div>    
-                  </div>        
-                </div>
-                <div class="ulev-1 ub ub-f1 font-b" data-index="1" id="search">
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
-                    <div class="iconfont icon-search" style="font-size: 2em"></div>
-                    <div class="ulev tx-c">搜索</div>
-                  </div>        
-                </div>
-                <div class="ulev-1 ub ub-f1 font-b" data-index="2" id="release"> 
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab sc-text-active"> 
-                    <div class="iconfont icon-tianjia" style="font-size: 2em"></div>
-                      <div class="ulev tx-c">发布</div>   
-                  </div>   
-                </div>
-                <div class="ulev-1 ub ub-f1 font-b" data-index="3" id="my">
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
-                   <div class="iconfont icon-yonghu" style="font-size: 2em"></div>
-                   <div class="ulev tx-c">我的</div>
-                  </div>       
-                </div>
-                <div class="ulev-1 ub ub-f1 font-b" data-index="4" id="user">
-                  <div class="ub-f1 ub ub-ver item ub-ac sc-text-tab">
-                    <div class="iconfont icon-gongneng" style="font-size: 2em"></div>
-                    <div class="ulev tx-c">功能</div>
-                  </div>        
-                </div>
-             </div>
-           </div>
+        <div class="uf sc-bg uinn-u1 uop close_bo" data-control="FOOTER" id="footer">
+            <div class="close" id="close">
+                <img src="release/css/myImg/close2.png">
+            </div>
         </div>
         </div>
 	    <script src="js/appcan.js"></script>
@@ -120,34 +88,14 @@
 		<script src="js/appcan.treeview.js"></script>
         <script src="release/js/release.js"></script>
         <script>
-            // appcan.ready(function() {
-                // var titHeight = $('#header').offset().height;
-                // appcan.frame.open("content", "search_content.html", 0, titHeight);
-                // window.onorientationchange = window.onresize = function() {
-                    // appcan.frame.resize("content", 0, titHeight);
-                // }
-            // })
-        appcan.button("#home", "btn-act", function() {
-           uexWindow.open("home","0","home.html","0","0","0","0","200");
-        })
-        appcan.button("#search", "btn-act", function() {
-           uexWindow.open("search","0","search.html","0","0","0","0","200");
-        })
-        appcan.button("#release", "btn-act", function() {
-           uexWindow.open("release","0","release.html","0","0","0","0","200");
-        })
-        appcan.button("#my", "btn-act", function() {
-           uexWindow.open("my","0","my.html","0","0","0","0","200");
-        })
-        appcan.button("#user", "btn-act", function() {
-           uexWindow.open("user","0","user.html","0","0","0","0","200");
-        })
+        appcan.button("#close", "close",
+        function() {appcan.window.close(-1);});
         function phone(){
-                appcan.window.open('enter','add.html',2);
-            }
-            function ie(){
-                appcan.window.open('enter','add.html',2);
-            }
+            appcan.window.open('enter','add.html',2);
+        }
+        function ie(){
+            appcan.window.open('enter','add.html',2);
+        }
         </script>
     </body>
 </html>

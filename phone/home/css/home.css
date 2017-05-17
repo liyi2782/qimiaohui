@@ -94,9 +94,9 @@ input[type="radio"] + div>div.tp-edit{
 .ho-tab{
     padding: 0.5em;
 }
-.sc-text{padding: 0.2em 0.5em}
+.sc-text{padding: 0.2em 0.5em;font-size: 0.9em;}
 .pd-5{width: 1.2em;height: 1.2em}
-.pd-5 img{position: absolute; top: 0.6em;}
+.pd-5 img{position: absolute; top: 0.9em;}
 .font-8{font-size: 80%}
 .po-f{position: relative;
     left: 2em;
@@ -105,16 +105,19 @@ input[type="radio"] + div>div.tp-edit{
 .po-t{position: absolute;
     left: 2em;font-size: 70%}
 .pd-4{  
+    width:1.7em;
+    height:1.7em;
 }
+.pd-4 img{width:100%;height:100%; position: relative;
+    top: 0.5em;}
 .pd-tf{
     padding-bottom: 0.8em;
     padding-top: 0.5em;
 }
 .pd-t{padding-top: 0.5em}
-.mf-1{margin-left: 1em}
+/*.mf-1{margin-left: 1em}*/
 .ba-f8{background: #f8f8f8}
-.pd-4 img{width: 1.5em; position: relative;
-    top: 0.7em;}
+
 .max-1{max-height: 2.2em}
 .tip0{position: relative;
     left: 2em;
@@ -169,7 +172,6 @@ input[type="radio"] + div>div.tp-edit{
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;}*/
-.pd-4{width: 1.7em;}
 .container {
 /*width: 50%;*/margin: 0 auto;
 }
@@ -310,7 +312,7 @@ margin: 0 auto;}
 .z1{color: #FF7E67;position: absolute;top: 0.3em;left: 2em;}
 .z2{position: absolute; left: 4.3em; top: 0.3em;}
 .grid-item { width: 47%;margin: 0.5em 1.5%;background: #FFFFFF}
-.grid-item img{width: 100%; height:100%;}
+.grid-item img{width: 100%;}
 .grid-item--width2 { width: 50%; }
 .tab33{.header{ position:fixed; left:0; top:0; width:100%; height:100px; z-index:9999; background-color:#000;}}
 .yue{width:94%;margin: 0 auto; border-radius: 0.2em;}
@@ -323,7 +325,8 @@ margin: 0 auto;}
     /*border-radius: 0.2em;*/
 }
 .bt{    width: 90%;
-    height: 1em;
+    height: 1.5em;
+    font-size:0.9em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

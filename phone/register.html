@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    <link rel="stylesheet" href="css/appcan.control.css">
+    <link rel="stylesheet" href="register/css/register.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <style>
+        .ya{font-size: 1.5em;padding:0 0.5em; color: #343434}
+        .clat:active{background: red}
+        .userText{border: 1px solid #FF0000;}
+    </style>
+</head>
+<body class="" ontouchstart>
+    <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+        <div class="ub ub-ver ub-ac ub-con loginBg" data-control="FLEXBOXVER" id="ContentFlexVer">
+            <div style="padding:1em 3em">
+                <div class="logo">
+                    <img src="css/icons/logo.png">
+                </div>
+            </div>
+            <div class="umar-a bc-border bc-fff" id="data">
+                <div class="ub ub-ac ubb umh5 bc-border ">
+                    <div class=" uinput ub ub-f1">
+                        <div class="iconfont icon-person ya"></div>
+                        <input  id="name" placeholder="你的昵称" type="text" class="ub-f1 input-b inputClass">
+                    </div>
+                </div>
+                <div class="ub ub-ac ubb umh5 bc-border ">
+                    <div class=" uinput ub ub-f1">
+                        <div class="iconfont icon-mobilephoneverification ya"></div>
+                        <input id="phone" placeholder="手机号" type="text" class="ub-f1 input-b inputClass">
+                        <input class="yzm yzm1" id="btnSendCode"  onclick="SetCode(true)" value="获取验证码"readonly="readonly"/>
+                    </div>
+                </div>
+                <div class="ub ub-ac ubb umh5 bc-border ">
+                    <div class=" uinput ub ub-f1">
+                        <div class="iconfont icon-mobilephoneverification ya"></div>
+                        <input id="code" placeholder="验证码" type="text" class="ub-f1 input-b inputClass">
+                    </div>
+                </div>
+                <div class="ub ub-ac ubb umh5 bc-border ">
+                    <div class=" uinput ub ub-f1">
+                        <div class="iconfont icon-password ya"></div>
+                        <input id="pass" placeholder="密码" type="password" class="umw4 ub-f1 input-b inputClass">
+
+                    </div>
+                </div>
+                <div class="ub ub-ac umh5 bc-border ">
+                    <div class=" uinput ub ub-f1">
+                        <div class="iconfont icon-refresh ya"></div>
+                        <input id="repass" placeholder="重输密码" type="password" class="umw4 ub-f1 input-b inputClass">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ub ub-ver zzc">
+                    <div class="button ub ub-ac bc-text-head ub-pc bc-btn uc-a1 btn-c clat" onclick="register()">
+                                                                            注册
+                    </div> 
+            </div>
+            <span id="user"></span>
+            <span id="pass"></span>
+            <span id="rep"></span>
+            <span id="em"></span>
+            <div class="ub ub-ver zzc">
+                    <div class="order">  
+                       <span style="white-space:pre">   </span><span class="line"></span>  
+                       <span style="white-space:pre">   </span><span class="txt">社交账号直接登录</span>  
+                       <span style="white-space:pre">   </span><span class="line"></span>  
+                    </div>  
+                    <div class="uinn-at1">
+                        <div class="button ub ub-ac bc-text-head ub-pc bc-btn uc-a1 btn-c  lv" id="">
+                                                                               微信登录
+                        </div>
+                    </div>
+            </div>
+            <div class="login-enter">
+                <span class="bottom-font-l" onclick="go_login()">已有账号登录</span>
+                <span class="bottom-font-r" onclick="look()">随便看看</span>
+            </div>
+    <div class="uinn-4b"></div>
+    </div>
+    </div>
+    <script src="js/appcan.js"></script>
+    <script src="js/appcan.control.js"></script>
+    <script src="js/appcan.scrollbox.js"></script>
+    <script src="js/template.import.js"></script>
+	<script src="js/appcan.listview.js"></script>
+	<script src="js/appcan.optionList.js"></script>
+	<script src="js/appcan.slider.js"></script>
+	<script src="js/appcan.tab.js"></script>
+	<script src="js/appcan.treeview.js"></script>
+	<script src="js/jquery-1.8.3.js"></script>
+    <script src="register/js/register.js"></script>
+    <script>
+    function go_login(){
+        appcan.window.open('go_login','login.html',2);
+    }
+    function look(){
+        appcan.window.open('look','home.html',2);
+    }
+    </script>
+    </body>
+</html>

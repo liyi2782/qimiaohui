@@ -1,30 +1,25 @@
-(function($) {
-    appcan.button("#nav-left", "btn-act",
-    function() {appcan.window.close(-1);});
-    appcan.button("#nav-right", "btn-act",
-    function() {});
-
-    appcan.ready(function() {
-        $.scrollbox($("body")).on("releaseToReload",
-        function() { //After Release or call reload function,we reset the bounce
-            $("#ScrollContent").trigger("reload", this);
-        }).on("onReloading",
-        function(a) { //if onreloading status, drag will trigger this event
-        }).on("dragToReload",
-        function() { //drag over 30% of bounce height,will trigger this event
-        }).on("draging",
-        function(status) { //on draging, this event will be triggered.
-        }).on("release",
-        function() { //on draging, this event will be triggered.
-        }).on("scrollbottom",
-        function() { //on scroll bottom,this event will be triggered.you should get data from server
-            $("#ScrollContent").trigger("more", this);
-        }).hide();
-    })
-
-	appcan.ready(function() {
-        })
-        appcan.button("#submit", "ani-act", function() {
-            $("form").submit();
-        })
-})($);
+//登录
+function login(){//函数login();
+  console.log("login");
+  var mobile=$("#phone").val();//取框中的用户名
+  var password=$("#pass").val();//取框中的密码
+  $.ajax({//一个ajax
+      type:"POST",//以post方式与后台沟通
+      url:"http://192.168.99.126:8003/users/log_in",//与此页沟通
+      dataType:"json",//返回的值以json方式解释
+      data:'mobile='+mobile+'&password='+password,//发送数据，分别是u、p
+      success:function(res){//如果调用成功
+          console.log(res);
+          console.log(res.info.access_token);
+          if (!res.success) {
+              console.log("登录失败");
+          } else{
+              console.log(res.data);
+              var token=res.info.access_token;
+              alert(token);
+              localStorage.c_token = token;
+          }; 
+          
+      }
+  })
+}

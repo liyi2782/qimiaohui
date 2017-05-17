@@ -1,8 +1,8 @@
 (function($) {
     appcan.button("#nav-left", "btn-act",
-    function() {});
-    appcan.button("#nav-right", "btn-act",
-    function() {});
+    function() {appcan.window.close(-1);});
+    appcan.button("#nav-left1", "btn-act",
+    function() {appcan.window.close(-1);});
     appcan.button(".nav-btn", "btn-act", function() {
             //appcan.window.close(-1);
         })
@@ -23,33 +23,6 @@
             $("#ScrollContent").trigger("more", this);
         }).hide();
     })
-
-    // var tabview_Tab = appcan.tab({
-        // selector: $("#Tab"),
-        // hasIcon: true,
-        // hasAnim: false,
-        // hasLabel: true,
-        // hasBadge: false,
-        // index: 0,
-        // data : [{
-            // label : "首页",
-            // icon : "fa-home",
-            // badge:'1',
-            // url:"my.html"
-        // }, {
-            // label : "搜索",
-            // icon : "fa-search"
-        // }, {
-            // label : "发布",
-            // icon : "fa-edit"
-        // }, {
-            // label : "我的",
-            // icon : "fa-user"
-        // }, {
-            // label : "功能",
-            // icon : "fa-th-large"
-        // }]
-    // });
-
-	
+    
+    
 })($);

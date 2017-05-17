@@ -106,3 +106,6 @@ input[type="radio"] + div>div.tp-edit{
     width: 6em;
     height: 6em;
 }
+.close_bo{width: 100%;text-align: center}
+.close{height: 2em;width: 2em;margin: 0 auto;margin-bottom: 0.3em;}
+#close img{height: 2.5em;width: 2.5em;margin: 0 auto}
